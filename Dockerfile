@@ -3,7 +3,7 @@ FROM node:lts-alpine
 WORKDIR /app
 
 COPY package*.json .
-RUN npm i --omit=dev && npm i -g serve
+RUN npm i && npm i -g serve
 
 COPY . .
 
