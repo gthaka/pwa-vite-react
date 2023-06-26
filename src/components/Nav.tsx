@@ -25,7 +25,7 @@ const Nav = (props: { offline: boolean }) => {
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
-            <a href="/" className="-m-1.5 p-1.5">
+            <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">{APP_NAME}</span>
 
               <img src={Logo} className="w-6 h-6" alt="" />
@@ -122,6 +122,7 @@ const Nav = (props: { offline: boolean }) => {
                       key={item.name}
                       to={item.href}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      onClick={() => setMobileMenuOpen(false)}
                     >
                       {item.name}
                     </NavLink>
