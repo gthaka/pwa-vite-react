@@ -9,8 +9,8 @@ const urlsToCache = [
     // "/static/js/main.chunk.js",
     // "/static/js/0.chunk.js",
     // "/static/js/bundle.js",
-    "/users",
-    "/about",
+    // "/users",
+    // "/about",
     // Add more URLs of static assets to cache (e.g., CSS, images, fonts)
 ];
 
