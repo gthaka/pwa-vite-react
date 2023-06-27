@@ -83,43 +83,4 @@ describe("Nav Component", () => {
 
     expect(mobileMenu).not.toBeInTheDocument();
   });
-
-  //   test("navigates to different pages and back", () => {
-  //     render(
-  //       <MemoryRouter initialEntries={["/"]} initialIndex={0}>
-  //         <Nav offline={false} />
-  //         <Home />
-  //         <About />
-  //         <Users />
-  //       </MemoryRouter>
-  //     );
-
-  //     // Verify that the Home page is initially rendered
-  //     expect(
-  //       screen.getByText(/A simple PWA implementation/i)
-  //     ).toBeInTheDocument();
-
-  //     // Navigate to the About page
-  //     const aboutLink = screen.getByRole("link", { name: /about/i });
-  //     fireEvent.click(aboutLink);
-
-  //     // Verify that the About page is rendered
-  //     expect(
-  //       screen.getByText(new RegExp(`About ${APP_NAME}`, "i"))
-  //     ).toBeInTheDocument();
-
-  //     // Navigate to the Users page
-  //     const usersLink = screen.getByText(/users/i);
-  //     fireEvent.click(usersLink);
-
-  //     // Verify that the Users page is rendered
-  //     expect(screen.getByText(/users page/i)).toBeInTheDocument();
-
-  //     // Navigate back to the Home page
-  //     const homeLink = screen.getByText(/home/i);
-  //     fireEvent.click(homeLink);
-
-  //     // Verify that the Home page is rendered again
-  //     expect(screen.getByText(/home page/i)).toBeInTheDocument();
-  //   });
 });
