@@ -28,7 +28,7 @@ const Nav = (props: { offline: boolean }) => {
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">{APP_NAME}</span>
 
-              <img src={Logo} className="w-6 h-6" alt="" />
+              <img src={Logo} className="w-6 h-6" alt="Logo" />
               {/* <img
                 className="h-8 w-auto"
                 src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
@@ -89,7 +89,7 @@ const Nav = (props: { offline: boolean }) => {
             <div className="flex items-center justify-between">
               <Link to="/" className="-m-1.5 p-1.5">
                 <span className="sr-only">{APP_NAME}</span>
-                <img src={Logo} className="h-8 w-auto" alt="" />
+                <img src={Logo} className="h-8 w-auto" alt="Logo" />
               </Link>
               <button
                 type="button"
