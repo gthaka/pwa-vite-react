@@ -3,10 +3,12 @@ import App from "../App";
 import { escapeRegExp } from "lodash";
 import { APP_NAME } from "../application";
 
+beforeEach(() => {
+  render(<App />);
+});
+
 describe("App Main Component", () => {
   test("renders main page", () => {
-    render(<App />);
-
     // Assert that the PWA text is present
     expect(
       screen.getByText(/a simple pwa implementation/i)
@@ -14,8 +16,6 @@ describe("App Main Component", () => {
   });
 
   test("navigate through various pages", () => {
-    render(<App />);
-
     // Navigate to the About page
     const navContainer = screen.getByRole("navigation");
     const homeLink = within(navContainer).getByRole("link", {
