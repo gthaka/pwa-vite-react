@@ -2,7 +2,7 @@
 # Stacks detected: deps:node:.,test:jest:
 version: 2.1
 orbs:
-  node: circleci/node@5
+  node: circleci/node@5.1.0
 jobs:
   test-node:
     # Install node dependencies and run tests
